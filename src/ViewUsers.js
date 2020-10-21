@@ -88,8 +88,8 @@ const ViewUsers = () => {
           );
       };
 
-        // const axios = require('axios').default;
-        // const token = Cookies.get('token')
+    //     const axios = require('axios').default;
+    //     const token = Cookies.get('token')
     //     const getUsers = (token) => {
     //     axios.get(
     //         'http://emphasoft-test-assignment.herokuapp.com/api/v1/users/',
