@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b10384c8617b35e932f76a77a7fcd085",
+    "revision": "473ebfc0dd39cef6b84ad8c140407c43",
     "url": "/emphasoft/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/emphasoft/static/js/2.1bf6c605.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "762cacb5a8f882f0bfb4",
-    "url": "/emphasoft/static/js/main.52d0a1a4.chunk.js"
+    "revision": "081f77a39c9404432b8a",
+    "url": "/emphasoft/static/js/main.6076e158.chunk.js"
   },
   {
     "revision": "7c57b725d8957e80a18d",
