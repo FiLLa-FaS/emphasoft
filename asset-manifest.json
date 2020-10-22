@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/emphasoft/static/js/main.6076e158.chunk.js",
-    "main.js.map": "/emphasoft/static/js/main.6076e158.chunk.js.map",
+    "main.js": "/emphasoft/static/js/main.7893b3d7.chunk.js",
+    "main.js.map": "/emphasoft/static/js/main.7893b3d7.chunk.js.map",
     "runtime-main.js": "/emphasoft/static/js/runtime-main.81be181a.js",
     "runtime-main.js.map": "/emphasoft/static/js/runtime-main.81be181a.js.map",
-    "static/js/2.1bf6c605.chunk.js": "/emphasoft/static/js/2.1bf6c605.chunk.js",
-    "static/js/2.1bf6c605.chunk.js.map": "/emphasoft/static/js/2.1bf6c605.chunk.js.map",
+    "static/js/2.e9ec0c99.chunk.js": "/emphasoft/static/js/2.e9ec0c99.chunk.js",
+    "static/js/2.e9ec0c99.chunk.js.map": "/emphasoft/static/js/2.e9ec0c99.chunk.js.map",
     "index.html": "/emphasoft/index.html",
-    "precache-manifest.7586486136a977d8822c3ac0008777d9.js": "/emphasoft/precache-manifest.7586486136a977d8822c3ac0008777d9.js",
+    "precache-manifest.17189e544abeaf1bc7e1d04ab5e24008.js": "/emphasoft/precache-manifest.17189e544abeaf1bc7e1d04ab5e24008.js",
     "service-worker.js": "/emphasoft/service-worker.js",
-    "static/js/2.1bf6c605.chunk.js.LICENSE.txt": "/emphasoft/static/js/2.1bf6c605.chunk.js.LICENSE.txt"
+    "static/js/2.e9ec0c99.chunk.js.LICENSE.txt": "/emphasoft/static/js/2.e9ec0c99.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.81be181a.js",
-    "static/js/2.1bf6c605.chunk.js",
-    "static/js/main.6076e158.chunk.js"
+    "static/js/2.e9ec0c99.chunk.js",
+    "static/js/main.7893b3d7.chunk.js"
   ]
 }
