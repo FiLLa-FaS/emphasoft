@@ -7,7 +7,7 @@ import ViewUsers from './ViewUsers'
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ThemeProvider theme={GlobalTheme}>
             <Switch>
             <Route path="/" exact component={ViewAuth} />

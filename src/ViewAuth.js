@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
 import {FormAuth} from './components'
 import { NavLink } from 'react-router-dom'
 
@@ -47,6 +48,10 @@ const ViewAuth = () => {
 const Wrapper = styled.div`
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
+    
+    ${breakpoint('xs', 'md')`
+                padding: 10px 0;
+            `}
 
     .success-auth {
         text-align: center;

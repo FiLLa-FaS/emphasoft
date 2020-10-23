@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
 
 const ListUsers = ({users, title}) => {
     return <Wrapper>
@@ -23,6 +24,11 @@ padding: 0;
     text-align: center;
   font-weight: 900;
   font-size: 36px;
+
+  ${breakpoint('xs', 'md')`
+           font-size: 28px;  
+           text-align: left; 
+          `}
 }
 
 .user-item {
@@ -37,12 +43,21 @@ margin-top: 20px;
         padding: 0;
         font-size: 36px;
         font-weight: 700;
+
+        ${breakpoint('xs', 'md')`
+                  font-size: 24px;  
+                `}
     }
 
     &__id {
         padding: 0;
         margin: 15px 0 0 0;
         font-size: 24px;
+
+        ${breakpoint('xs', 'md')`
+                  font-size: 18px;
+                  margin: 7px 0 0 0;  
+                `}
     }
 
     &__username {
@@ -50,6 +65,11 @@ margin-top: 20px;
         margin: 15px 0 0 0;
         font-size: 28px;
         font-style: italic;
+
+        ${breakpoint('xs', 'md')`
+                  font-size: 18px;
+                  margin: 7px 0 0 0;  
+                `}
     }
 }
 `

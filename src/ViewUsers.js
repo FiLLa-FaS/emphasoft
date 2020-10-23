@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
 import { sortBy, debounce } from 'lodash'
 import {ListUsers, Input} from './components'
 // import Cookies from 'js-cookie'
@@ -54,8 +55,8 @@ const ViewUsers = () => {
         },
     ]
 
-    const currentUsers = USERS
-    const sortedUsers = sortBy(currentUsers, 'id')
+    const currentUsers = USERS;
+    const sortedUsers = sortBy(currentUsers, 'id');
 
 
     const [searchTerm, setSearchTerm] = useState("");
@@ -121,12 +122,19 @@ const ViewUsers = () => {
 
 const Wrapper = styled.div`
 padding: 30px;
+${breakpoint('xs', 'md')`
+          padding: 10px 0;  
+        `}
 `
 const ErrorMessage = styled.p`
 font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #c93030;
   margin: 0;
+
+  ${breakpoint('xs', 'md')`
+              font-size: 16px;
+          `}
 `;
 
 export default ViewUsers

@@ -7,22 +7,46 @@ import validation from './validation'
 
 const FormAuth = ({submitAuth}) => {
  
-    const axios = require('axios').default;
+    // const axios = require('axios').default;
     
     const authorizeUser = (values) => {
-        axios.post('http://emphasoft-test-assignment.herokuapp.com/api-token-auth/', {
-        username: values.username,
-        password: values.password
-      })
-      .then((response) => {
-        Cookies.set('token', response.data.token);
+
+        fetch('https://emphasoft-test-assignment.herokuapp.com/api-token-auth/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+              },
+            body: JSON.stringify({username: values.username, password: values.password})
+        })
+        .then((response) => {
+            if (response.status >= 200 && response.status < 300) {
+                return response;
+            } else {
+                let error = new Error(response.statusText);
+                error.response = response;
+                throw error;
+            }
+        })
+        .then(response => response.json())
+        .then(results => {
+            Cookies.set('token', results.token);
         submitAuth();
-        console.log(response, 'response', Cookies.get('token'), 'token');
-      })
-      .catch((error) => {
-        console.log(error, 'error');
-      });
-      }
+        console.log(results, 'results', Cookies.get('token'), 'token');
+        })
+    }
+    //     axios.post('https://emphasoft-test-assignment.herokuapp.com/api-token-auth/', {
+    //     username: values.username,
+    //     password: values.password
+    //   })
+    //   .then((response) => {
+    //     Cookies.set('token', response.data.token);
+    //     submitAuth();
+    //     console.log(response, 'response', Cookies.get('token'), 'token');
+    //   })
+    //   .catch((error) => {
+    //     console.log(error, 'error');
+    //   });
+    //   }
 
     return (
         <Wrapper>
