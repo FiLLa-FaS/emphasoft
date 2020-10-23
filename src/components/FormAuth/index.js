@@ -77,7 +77,7 @@ const FormAuth = ({submitAuth}) => {
 const Wrapper = styled.div`
 .form {
     font-family: Arial, Helvetica, sans-serif;
-    width: 400px;
+    max-width: 400px;
     padding: 24px;
     margin: 10px auto 0;
     border: solid 1px #eee;
