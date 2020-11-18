@@ -6,8 +6,6 @@ import fields from './fields'
 import validation from './validation'
 
 const FormAuth = ({submitAuth}) => {
- 
-    // const axios = require('axios').default;
     
     const authorizeUser = (values) => {
 
@@ -31,22 +29,8 @@ const FormAuth = ({submitAuth}) => {
         .then(results => {
             Cookies.set('token', results.token);
         submitAuth();
-        console.log(results, 'results', Cookies.get('token'), 'token');
         })
     }
-    //     axios.post('https://emphasoft-test-assignment.herokuapp.com/api-token-auth/', {
-    //     username: values.username,
-    //     password: values.password
-    //   })
-    //   .then((response) => {
-    //     Cookies.set('token', response.data.token);
-    //     submitAuth();
-    //     console.log(response, 'response', Cookies.get('token'), 'token');
-    //   })
-    //   .catch((error) => {
-    //     console.log(error, 'error');
-    //   });
-    //   }
 
     return (
         <Wrapper>
