@@ -32,7 +32,7 @@ padding: 0;
 }
 
 .user-item {
-margin-top: 20px;
+margin-top: 60px;
 
 &:first-of-type {
     margin-top: 0;
@@ -41,8 +41,9 @@ margin-top: 20px;
     &__title {
         margin: 0;
         padding: 0;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
+        overflow-wrap: break-word;
 
         ${breakpoint('xs', 'md')`
                   font-size: 24px;  

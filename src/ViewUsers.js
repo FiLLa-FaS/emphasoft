@@ -40,7 +40,7 @@ const ViewUsers = () => {
 
   const renderUsers = () => {
     const actualUsers = sortBy(
-      users.filter((user) => user.username.toLowerCase().includes(searchTerm)),
+      (users.filter((user) => user.username.toLowerCase().includes(searchTerm))),
       "id"
     );
 
