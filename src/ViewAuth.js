@@ -23,19 +23,6 @@ const ViewAuth = () => {
         setIsSubmitting(true)
     }
 
-    // const getUsers = (token) => {
-    //     axios.get(
-    //         'http://emphasoft-test-assignment.herokuapp.com/api/v1/users/',
-    //         { headers: { Authorization: `Bearer ${token}` } }
-    //       )
-    //   .then((response) => {
-    //     console.log(response, 'response');
-    //   })
-    //   .catch((error) => {
-    //     console.log(error, 'error');
-    //   });
-    //   }
-
     return  <Wrapper>
                 {showAuth()}
                 {isSubmitting && 
